@@ -4,7 +4,7 @@
 [![CSS](https://img.shields.io/badge/CSS-1877F2?style=for-the-badge&logo=CSS&logoColor=white&labelColor=101010)]()
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white&labelColor=101010)]()
 
-Bienvenido al proyecto de la página web para un restaurante asiático. Este proyecto de fin de máster incluye una serie de páginas web para presentar la oferta del restaurante, permitir a los usuarios seleccionar productos y realizar reservas.
+Bienvenido al proyecto de la página web para un restaurante asiático. Este proyecto de fin de máster consiste en una página para presentar la oferta del restaurante, permitir a los usuarios seleccionar productos y realizar reservas.
 
 ## Descripción del Proyecto
 
@@ -43,5 +43,7 @@ Para ver el proyecto en tu entorno local, sigue estos pasos:
 3. **Abre el Proyecto en tu navegador**:
 
    Abre el archivo 'index.html' en tu navegador para ver la página de inicio
+
+
 
 
