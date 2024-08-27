@@ -1,0 +1,180 @@
+/*Vamos a colocar una imagen de fondo que cubra todo el cuerpo y quede centrado el motivo.*/
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: red;
+}
+
+.imagenFondo {
+  background: url(../media/bonsaiFondoAmarillo.jpg) center/cover no-repeat fixed;
+  height: 100vh;
+  width: 90vw;
+  position: center;
+  top: 0;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.contenedor,
+.contenedor2,
+.contenedor4 {
+  max-width: 90vw;
+  margin: 0 auto;
+}
+
+/*Vamos a darle formato al Header*/
+
+.contenedor {
+  /*Establecemos un color de fondo en el header con rgba equivalente al establecido en las otras páginas. 
+    Pero le añadimos un grado de transparencia.*/
+  background-color: rgba(51, 48, 48, 0.9);
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30px;
+  margin-right: 10px;
+}
+
+
+
+.logoJapon img {
+  margin-top: 20px;
+}
+
+.titulo h1 {
+  font-size: 50px;
+  font-weight: bolder;
+  color: red;
+}
+
+/*Le damos formato al menú.*/
+
+.menu li {
+  text-decoration: none;
+  list-style: none;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.menu a {
+  text-decoration: none;
+  color: red;
+  margin-right: 40px;
+}
+
+/*Ahora le damos formato al menú de Grupos. Para evitar que nos salga el scroll lateral con Microsoft Edge 
+estableceremos un grid-template-columns que establecerá que los elementos de la cuadrícula se ajustarán
+automáticamente al ancho de la pantalla. Con un ancho mínimo de 250px y un máximo de 1fr (fracciones)
+deberíamos de poder evitar el scroll lateral.*/
+
+.Contenedor2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.MenuGrupos {
+  background-color: rgba(51, 48, 48, 0.9);
+  padding: 20px;
+  margin-left: 30px;
+  margin-right: 10px;
+}
+
+.MenuGrupos h2 {
+  margin-bottom: 10px;
+  color: red;
+}
+
+.MenuGrupos ul {
+  list-style: none;
+  padding: 0;
+}
+
+.MenuGrupos li {
+  margin-bottom: 5px;
+  color: red;
+}
+
+.MenuGrupos p {
+  color: red;
+}
+
+.MenuGrupos a {
+  text-decoration: none;
+  color: black;
+}
+
+.boton {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.boton:hover {
+  background-color: #0056b3;
+}
+
+/*Ahora le damos formato al pie.*/
+
+.pie {
+  background-color: rgba(51, 48, 48, 0.9);
+  margin-top: 10px;
+  margin-left: 30px;
+  margin-right: 10px;
+}
+
+.pie a {
+  display: block;
+  text-decoration: none;
+  color: red;
+}
+
+/*Vamos a darle formato para ordenador de sobremesa o portatil.*/
+
+@media screen and (min-width: 1024px) {
+
+  .logoJapon,
+  .titulo,
+  .redesCesta {
+    /*Distribuimos los elementos del menú en línea.*/
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  .menu li {
+    /*Distribuimos los elementos del menú en línea.*/
+    display: inline-block;
+  }
+
+  .contenedor {
+    /*Centramos el fondo del contenedor.*/
+    margin-left: 140px;
+    margin-right: 20px;
+  }
+
+  .MenuGrupos {
+    /*Cuadramos el contenedor del MenuGrupos*/
+    margin-left: 140px;
+    margin-right: 20px;
+  }
+
+  .pie {
+    margin-left: 140px;
+    margin-right: 20px;
+  }
+}

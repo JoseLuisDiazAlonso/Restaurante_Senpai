@@ -1,0 +1,287 @@
+/*Damos formato al body.*/
+
+body {
+    overflow-x: hidden;
+    background-color: #333030;
+}
+
+
+
+/*Damos formato al Header en vista móvil*/
+
+.contenedor,
+.contenedor8 {
+    /*Centramos todos los elementos del Header*/
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+/*Damos formato a todos los elementos del menú.*/
+
+.menu li,
+.menu ul {
+    /*Eliminamos los estilos de la lista. Y centramos los elementos al resto de la página.*/
+    list-style: none;
+    text-align: center;
+    margin-right: 25px;
+
+}
+
+.menu a {
+    /*Eliminamos los estilos de los enlaces.*/
+    text-decoration: none;
+}
+
+h1 {
+    color: red;
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+a {
+    color: red;
+}
+
+#cestaContador {
+    /*La fuente del contador de la cesta será roja.*/
+    color: red;
+}
+
+/*Vamos a darle formato a la Galeria de imágenes para que se vayan alternando las imágenes cada poco.*/
+
+.galeria {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+}
+
+.galeria img {
+    position: absolute;
+    object-fit: cover;
+    /*La Galería ocupará el ancho disponible de pantalla*/
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    /*Es el tiempo y tipo de transición de imágen.*/
+}
+
+.galeria img.active {
+    opacity: 1;
+}
+
+/*Damos Formato a los textos*/
+
+.textos {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: red;
+
+}
+
+/*Vamos a dar formato a las Especialidades para que al pasar el cursor sobre la fotográfia se mostrará una descripción
+del producto.*/
+
+.contenedor6 {
+    width: 90vw;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/*Damos formato a la sección de Especialidades.
+Al pasar el botón sobre la fotografía se mostrará 
+una descripción del producto.*/
+
+.imagen-contenedor {
+    position: relative;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: opacity 2.0s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.imagen-contenedor:hover .overlay {
+    opacity: 1;
+}
+
+.imagen-contenedor:hover {
+    transform: scale(1.2);
+}
+
+.overlay h3,
+.overlay p {
+    margin: 0;
+    padding-left: 10px;
+    position: absolute;
+
+
+}
+
+.especialidades h2 {
+    color: red;
+}
+
+.botonEspecialidades {
+    display: block;
+    text-decoration: none;
+}
+
+/*Ahora le damos formato a los botones de Carta y menú para Grupos*/
+
+.contenedor7 {
+    /*Centramos todos los elementos del contenedor*/
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.cartaMenu h2 {
+    color: red;
+}
+
+/*Vamos a crear un efecto en el cual al pasar el ratón sobre la imágen de la carta la foto se agrande 
+y se de acceso a un enlace a la sección de carta y Menu para Grupos.*/
+
+
+a img {
+    transition: 0.3s ease;
+}
+
+.imagen-enlace {
+    position: relative;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: opacity 2.0s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.imagen-enlace:hover .overlay {
+    opacity: 1;
+}
+
+.overlay a {
+    margin: 0;
+    padding: 10px;
+    text-decoration: none;
+}
+
+/*Ahora le damos formato al pie*/
+
+.pie a {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/*Le damos formato de tablet a la página.*/
+
+@media screen and (min-width:768px) {
+    .carta {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menuGrupos {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+/*Ahora le damos formato para ordenador portatil y de sobremesa.*/
+
+@media screen and (min-width:1023px) {
+
+    .logoJapon,
+    .titulo,
+    .redesCesta,
+    #cestaCompra {
+        display: inline-block;
+    }
+
+    .logoJapon,
+    .titulo,
+    .redesCesta {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+
+
+    /*Damos formato a los elementos del menú.*/
+
+    .menu li {
+        /*Distribuimos en línea los elementos del menú.*/
+        display: inline-block;
+    }
+
+    /*Le damos un poco más de altura a la imágen pues en formato ordenador se ve un poco estrecha.*/
+
+    .galeria {
+        height: 350px;
+    }
+
+    .especialidades h2 {
+        /*Desplazamos para centrar el título h2*/
+        margin-left: 200px;
+
+    }
+
+    .imagen-contenedor {
+        margin-left: 30px;
+    }
+
+    .imagen-contenedor h3 {
+        color: red;
+    }
+
+
+    .pie a {
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+    }
+
+
+}

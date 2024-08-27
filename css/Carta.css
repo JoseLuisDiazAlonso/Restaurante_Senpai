@@ -1,0 +1,202 @@
+body {
+    width: 90vw;
+    overflow-x: hidden;
+    /*Eliminamos el distanciamoiento lateral.*/
+    background: linear-gradient(45deg, #f48236, #e4742ad4);
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+/*Le Damos formato al Header.*/
+
+header {
+    width: 90vw;
+    /*Le damos color al fondo.*/
+    background-color: #333030;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+
+}
+
+.contenedor {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/*Le damos formato al Header*/
+
+.logoJapon img {
+
+    margin-top: 20px;
+    /*Desplazamos el logo hacia abajo.*/
+}
+
+/*Le damos formato al título*/
+
+.titulo h1 {
+    font-size: 50px;
+    font-weight: bolder;
+    color: red;
+}
+
+/*Le damos formato al menú.*/
+
+.menu a,
+li {
+    text-decoration: none;
+    list-style: none;
+    align-items: flex-start;
+    justify-content: flex-start;
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 25px;
+
+}
+
+.redesCesta {
+    display: inline-flex;
+}
+
+#cestaContador {
+    color: red;
+}
+
+/*Vamos a darle formato a la lista de la carta y a la carta.*/
+
+.secciones {
+    width: 90vw;
+    background-color: #333030;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.secciones h3,
+.secciones h2,
+.secciones p {
+    color: red;
+}
+
+.secciones span {
+    color: red;
+}
+
+
+.listas a {
+    text-decoration: none;
+}
+
+.listas ul,
+.listas li {
+    text-align: center;
+    list-style-position: inside;
+    /*Coloca los marcadores de lista dentro del área del texto*/
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.producto {
+    /*Como los productos quedan muy juntos unos con otros les añadimos un
+    distanciamiento superior.*/
+
+    margin-top: 10px;
+
+}
+
+
+/*Ahora le damos formato al pie.*/
+
+.pie a {
+    margin-top: 10px;
+    display: block;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
+
+}
+
+/*Ahora le damos formato al footer.*/
+
+
+.pie {
+    background-color: #333030;
+    width: 90vw;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/*Vamos a darle formato para ordenador portatil y de sobremesa.*/
+
+@media screen and (min-width:1023px) {
+
+    header {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .logoJapon,
+    .titulo,
+    #cestaCompra {
+        /*Establecemos todos los elementos del header en línea.*/
+        display: inline-block;
+    }
+
+    .contenedor,
+    .logoJapon,
+    .titulo,
+    .redesCesta {
+        /*Establecemos una separación lateral entre elementos de tal forma que quede centrado.*/
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    /*Damos formato a los elementos del menú.*/
+
+    .menu li {
+        /*Distribuimos en línea los elementos del menú.*/
+        display: inline-block;
+    }
+
+    /*Damos formato a la sección de productos.*/
+
+    .contenedor2 {
+        /*Centramos todos los elementos del contenedor.*/
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .secciones,
+    .producto {
+        /*Colocamos el div de secciones y producto en línea.*/
+        display: inline-block;
+    }
+
+    .producto {
+        width: 75vw;
+        margin-left: 40px;
+    }
+
+    .listas {
+        /*Fijamos el div listas al scroll.*/
+        width: 25vw;
+        position: fixed;
+    }
+
+    .listas a {
+        color: red;
+        margin-left: 20px;
+    }
+
+
+}

@@ -1,0 +1,54 @@
+/*Primero le damos formato al body*/
+
+body {
+    overflow-x: hidden;
+    background-color: #333030;
+}
+
+.logoJapon,
+.titulo,
+.redesCesta,
+#cestaCompra {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.titulo h1 {
+    color: red;
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.menu li {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    list-style: none;
+    margin-right: 50px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: red;
+}
+
+.avisoLegal {
+    background-color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/*Ahora le damos formato al pie.*/
+
+.pie a {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: red;
+    text-decoration: none;
+}
+
+/*Ahora le damos formato para ordenador de sobremesa o portatil.*/
+
