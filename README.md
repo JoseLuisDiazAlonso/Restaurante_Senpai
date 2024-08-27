@@ -1,6 +1,7 @@
 # Página Web del Restaurante Asiático
 
 [![HTML5](https://img.shields.io/badge/HTML5-39E09B?style=for-the-badge&logo=HTML5&logoColor=white&labelColor=101010)]()
+[![CSS](https://img.shields.io/badge/CSS-1877F2?style=for-the-badge&logo=CSS&logoColor=white&labelColor=101010)]()
 
 Bienvenido al proyecto de la página web para un restaurante asiático. Este proyecto de fin de máster incluye una serie de páginas web para presentar la oferta del restaurante, permitir a los usuarios seleccionar productos y realizar reservas.
 
