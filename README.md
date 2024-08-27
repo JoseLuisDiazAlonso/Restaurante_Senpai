@@ -29,7 +29,7 @@ Este proyecto consiste en una página web estática desarrollada con HTML, CSS y
 - **CSS**: Estilos y diseño visual del sitio web.
 - **JavaScript**: Interactividad y funcionalidades adicionales, como la gestión de la cesta de la compra y el formulario de reservas.
 
-## Instalación
+## 📦 Instalación
 
 Para ver el proyecto en tu entorno local, sigue estos pasos:
 
