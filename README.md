@@ -23,7 +23,7 @@ Este proyecto consiste en una página web estática desarrollada con HTML, CSS y
 - **Formulario de Reserva**: Permite a los usuarios hacer reservas fácilmente.
 - **Responsividad**: Adaptación del diseño a diferentes tamaños de pantalla para una mejor experiencia en dispositivos móviles y de escritorio.
 
-## Tecnologías Utilizadas
+## 🛠 Tecnologías y Herramientas
 
 - **HTML**: Estructura del contenido de las páginas.
 - **CSS**: Estilos y diseño visual del sitio web.
@@ -40,7 +40,8 @@ Para ver el proyecto en tu entorno local, sigue estos pasos:
 2. **Navega al Directorio del Proyecto**:
 
    cd nombre-repositorio
-3. **Abre el Proyecto en tu navegador**:
+   
+4. **Abre el Proyecto en tu navegador**:
 
    Abre el archivo 'index.html' en tu navegador para ver la página de inicio
 
