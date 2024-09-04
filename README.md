@@ -6,6 +6,8 @@
 
 Bienvenido al proyecto de la página web para un restaurante asiático. Este proyecto de fin de máster consiste en una página para presentar la oferta del restaurante, permitir a los usuarios seleccionar productos y realizar reservas.
 
+**Todo el código lo podrás encontrar en la rama master**
+
 ## Descripción del Proyecto
 
 Este proyecto consiste en una página web estática desarrollada con HTML, CSS y JavaScript. El sitio web ofrece las siguientes funcionalidades:
